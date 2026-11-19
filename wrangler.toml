@@ -1,0 +1,13 @@
+name = "fizzon-kick-stats"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+CHANNEL = "fizzon"
+KICK_CLIENT_ID = "01M7AH5FEXTDF24SK5HF1CAPN2"
+# After the first deploy, replace fizzon with the one wrangler prints, then deploy again.
+REDIRECT_URI = "https://fizzon-kick-stats.fizzon.workers.dev/auth/callback"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "52d5899b10844da6857d4b7e9786b40a"
